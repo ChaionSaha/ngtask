@@ -10,3 +10,31 @@
 *::after {
 	font-family: 'Kanit', sans-serif;
 }
+
+.marquee-container {
+	@apply overflow-x-hidden;
+	& > .marquee-text {
+		/* transform: translateX(-100%); */
+		/* animation: scroll 15s linear;
+		animation-iteration-count: infinite; */
+		@apply animate-[scrollSM_40s_linear_infinite] xl:animate-[scrollXL_40s_linear_infinite];
+	}
+}
+
+@keyframes scrollXL {
+	0% {
+		transform: translateX(200%);
+	}
+	100% {
+		transform: translateX(-120%);
+	}
+}
+
+@keyframes scrollSM {
+	0% {
+		transform: translateX(50%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
