@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/output.css" />
+		<title>NGTask</title>
+	</head>
+
+	<body class="min-h-screen bg-base-200">
+		<div
+			class="lg:w-[60%] w-full px-5 lg:px-0 py-5 flex flex-col items-center mx-auto"
+		>
+			<img src="./img/logo.jpg" alt="" class="w-36" />
+			<h1 class="text-2xl font-semibold text-primary">Welcome</h1>
+			<div class="flex flex-col lg:w-[40%] w-full mt-16 gap-y-5">
+				<div class="input-container">
+					<label for="mobile">Mobile Number</label>
+					<input type="tel" />
+				</div>
+
+				<div class="input-container">
+					<label for="mobile">Password</label>
+					<input type="password" />
+				</div>
+
+				<button
+					class="p-2 mt-5 uppercase duration-150 border border-gray-300 rounded-full hover:text-white hover:bg-primary hover:border-primary"
+				>
+					login
+				</button>
+			</div>
+
+			<p class="mt-10 text-sm">Not registered yet?</p>
+			<a href="./signUp.html" class="text-primary">Open New Acccount</a>
+		</div>
+	</body>
+	<script>
+		'use strict';
+		const inputLabels = document.querySelectorAll('.input-container label');
+		const inputFields = document.querySelectorAll('.input-container  input');
+
+		inputFields.forEach((f, i) => {
+			f.addEventListener('focus', (e) => {
+				f.parentElement.children[0].classList.add('label-hide');
+			});
+			f.addEventListener('blur', (e) => {
+				// console.log(f.value);
+				if (f.value === '') {
+					f.parentElement.children[0].classList.remove('label-hide');
+				}
+			});
+		});
+
+		inputLabels.forEach((l) => {
+			l.addEventListener('click', (e) => {
+				l.parentElement.children[1].focus();
+			});
+		});
+	</script>
+</html>
