@@ -16,12 +16,12 @@
 			<div class="flex flex-col lg:w-[40%] w-full mt-16 gap-y-5">
 				<div class="input-container">
 					<label for="mobile">Mobile Number</label>
-					<input type="tel" />
+					<input type="tel" class="input" />
 				</div>
 
 				<div class="input-container">
 					<label for="mobile">Password</label>
-					<input type="password" />
+					<input type="password" class="input" />
 				</div>
 
 				<button
@@ -38,7 +38,7 @@
 	<script>
 		'use strict';
 		const inputLabels = document.querySelectorAll('.input-container label');
-		const inputFields = document.querySelectorAll('.input-container  input');
+		const inputFields = document.querySelectorAll('.input-container  .input');
 
 		inputFields.forEach((f, i) => {
 			f.addEventListener('focus', (e) => {

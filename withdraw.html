@@ -13,36 +13,26 @@
 			<a href="./index.html">
 				<i class="text-2xl bi bi-chevron-left"></i>
 			</a>
-			<p>Deposit</p>
+			<p>Withdraw</p>
 		</div>
 		<div class="flex flex-col p-5 gap-y-5">
 			<div class="p-5 font-medium bg-base-100 rounded-xl">
-				Minimum deposit is 300BDT. If you deposit 2000BDT, you will get 500BDT
-				extra bonus. Deposit will be successful in auto system.
+				Minimum withdraw is 500BDT. Withdrawal will be successful in auto
+				system.
 			</div>
-			<div class="flex flex-col p-5 font-medium bg-base-100 rounded-xl">
-				<div class="flex items-center gap-x-3">
-					<i class="text-2xl bi bi-dot"></i>
-					<p>Bkash: 0123456789</p>
-					<p class="p-2 py-0 text-white bg-green-500 rounded-xl">Copy</p>
-				</div>
-				<div class="flex items-center gap-x-3">
-					<i class="text-2xl bi bi-dot"></i>
-					<p>Nagad: 0123456789</p>
-					<p class="p-2 py-0 text-white bg-green-500 rounded-xl">Copy</p>
-				</div>
-			</div>
+
 			<div class="flex flex-col p-5 gap-x-2 bg-base-100 rounded-xl">
-				<p>Enter details of your transaction</p>
+				<p>Enter your payment information carefully</p>
 				<div class="flex flex-col my-5 gap-y-5">
+					<div class="input-container">
+						<label for="mobile">Number</label>
+						<input type="tel" class="input" />
+					</div>
 					<div class="input-container">
 						<label for="mobile">Amount</label>
 						<input type="number" class="input" />
 					</div>
-					<div class="input-container">
-						<label for="mobile">Transaction ID</label>
-						<input type="text" class="input" />
-					</div>
+
 					<div class="input-container">
 						<label for="mobile">Method</label>
 						<select class="input">
@@ -53,16 +43,15 @@
 						</select>
 					</div>
 				</div>
-				<p>
-					You must correctly enter the Transaction ID, Amount and Method. Of
-					course within 1 minnute automatically the recharge will be successful
-					and the balance will be added.
-				</p>
+
 				<button
 					class="p-2 mt-5 uppercase duration-150 border border-gray-300 rounded-full hover:text-white hover:bg-primary hover:border-primary"
 				>
-					Recharge
+					Withdraw
 				</button>
+				<a href="./index.html" class="mt-5 text-center text-blue-500"
+					>Back to Home</a
+				>
 			</div>
 		</div>
 	</body>
